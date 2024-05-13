@@ -1,0 +1,9 @@
+{
+  "loading": "Loading...",
+  "list": {
+    "title": "List"
+  },
+  "create": {
+    "title": "Create"
+  }
+}
