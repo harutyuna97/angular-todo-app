@@ -13,7 +13,7 @@ export class TopbarComponent {
   ) {
   }
 
-  toggleSidebar() {
-    this.sidebarService.toggleSidebar();
+  showSidebar() {
+    this.sidebarService.toggleSidebar(true);
   }
 }

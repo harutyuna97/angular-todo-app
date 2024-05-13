@@ -21,6 +21,6 @@ export class SidebarComponent {
   }
 
   hideSidebar() {
-    this.sidebarService.toggleSidebar();
+    this.sidebarService.toggleSidebar(false);
   }
 }
