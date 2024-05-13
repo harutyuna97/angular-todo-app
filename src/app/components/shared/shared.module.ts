@@ -5,6 +5,9 @@ import {SidebarModule} from "primeng/sidebar";
 import {RippleModule} from "primeng/ripple";
 import {TranslateModule} from "@ngx-translate/core";
 import {RouterLink, RouterLinkActive} from "@angular/router";
+import {TopbarComponent} from "./topbar/topbar.component";
+import {ToolbarModule} from "primeng/toolbar";
+import {AvatarModule} from "primeng/avatar";
 
 @NgModule({
   imports: [
@@ -13,13 +16,17 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
     RippleModule,
     TranslateModule,
     RouterLinkActive,
-    RouterLink
+    RouterLink,
+    ToolbarModule,
+    AvatarModule
   ],
   exports: [
-    SidebarComponent
+    SidebarComponent,
+    TopbarComponent
   ],
   declarations: [
     SidebarComponent,
+    TopbarComponent
   ]
 })
 

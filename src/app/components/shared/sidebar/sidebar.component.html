@@ -1,8 +1,8 @@
-<p-sidebar [(visible)]="sidebarVisible">
+<p-sidebar [(visible)]="sidebarVisible" (onHide)="hideSidebar()">
   <ng-template pTemplate="header">
     <div class="flex align-items-center justify-content-between px-4 flex-shrink-0">
         <span class="inline-flex align-items-center gap-2">
-            <span class="font-semibold text-2xl text-primary">Todo app</span>
+            <span class="font-semibold text-2xl text-primary">{{'title' | translate}}</span>
         </span>
     </div>
   </ng-template>
