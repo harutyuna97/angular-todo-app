@@ -11,6 +11,10 @@ import {ListComponent} from "./components/list/list.component";
 import {CreateComponent} from "./components/create/create.component";
 import {SharedModule} from "./components/shared/shared.module";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {InputTextModule} from "primeng/inputtext";
+import {InputTextareaModule} from "primeng/inputtextarea";
+import {DropdownModule} from "primeng/dropdown";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -32,7 +36,11 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
         deps: [HttpClient]
       }
     }),
-    ProgressSpinnerModule
+    ProgressSpinnerModule,
+    InputTextModule,
+    InputTextareaModule,
+    DropdownModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
